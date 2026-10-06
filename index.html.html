@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lavanya R | AI Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--glow:rgba(91,61,245,.32);--glow2:rgba(255,122,162,.30);--bg:#F5F4FB;--surface:#FFFFFF;--ink:#1B1740;--muted:#575379;--line:#DAD7EE;--accent:#5B3DF5;--on-accent:#FFFFFF;--pink:#FF7AA2;--soft:#ECE9FC;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13112B;--surface:#1D1A40;--ink:#EEEBFF;--muted:#B0ABD6;--line:#34306A;--accent:#9C86FF;--on-accent:#13112B;--soft:#27235A;--glow:rgba(156,134,255,.42);--glow2:rgba(255,122,162,.26)}}
+:root[data-theme="dark"]{--bg:#13112B;--surface:#1D1A40;--ink:#EEEBFF;--muted:#B0ABD6;--line:#34306A;--accent:#9C86FF;--on-accent:#13112B;--soft:#27235A;--glow:rgba(156,134,255,.42);--glow2:rgba(255,122,162,.26)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:20px;flex-wrap:wrap;padding:22px 0;font-weight:600;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--accent)}
+nav .who{margin-right:auto;color:var(--ink);font-family:Sora,sans-serif;font-weight:700}
+.hero{padding:40px 0 90px;max-width:760px}
+h1{font-family:"Times New Roman",Times,serif;font-size:clamp(52px,8vw,88px);font-weight:700;letter-spacing:-.01em;line-height:1.05}
+.role{font:700 clamp(20px,2.6vw,28px)/1.3 Sora,sans-serif;color:var(--accent);margin:14px 0}
+.lede{color:var(--muted);font-size:18px;max-width:52ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--on-accent)}
+section{padding:70px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);font-weight:700;margin-bottom:28px;letter-spacing:-.02em}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.stats{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.stats li{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:10px;padding:14px 18px}
+.stats b{display:block;font:700 19px Sora,sans-serif}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.sk{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.sk h3{font-size:18px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--soft);padding:4px 12px;border-radius:99px;font-size:15px;font-weight:600}
+.entry{display:grid;grid-template-columns:180px 1fr;gap:26px;padding:24px 0;border-bottom:1px solid var(--line)}
+.entry:last-child{border-bottom:0}
+.when{color:var(--muted);font-weight:600;font-size:15px}
+.entry h3{font-size:22px;margin-bottom:4px}
+.org{color:var(--accent);font-weight:700;margin:0 0 8px}
+.entry ul{margin:0;padding-left:20px}.entry li{margin:5px 0}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;margin-bottom:20px}
+.proj h3{font-size:24px;margin-bottom:4px;max-width:40ch}
+.tag{display:inline-block;background:var(--pink);color:#2A0B17;font-weight:700;font-size:13px;padding:2px 10px;border-radius:6px;margin:8px 0}
+.stack{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0;padding:0;list-style:none;font-size:14px;color:var(--muted)}
+.stack li{border:1px solid var(--line);padding:2px 10px;border-radius:6px}
+.contact a.big{font:700 clamp(20px,4vw,38px)/1.25 Sora,sans-serif;text-decoration:none;word-break:break-all;border-bottom:3px solid var(--pink)}
+.contact p{margin:12px 0}
+footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.two{grid-template-columns:1fr}.entry{grid-template-columns:1fr;gap:4px}body{font-size:16px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+body{overflow-x:hidden}
+.hero{position:relative;isolation:isolate}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(40px);z-index:-1;pointer-events:none}
+.hero::before{width:520px;height:520px;top:-120px;right:-140px;background:radial-gradient(circle,var(--glow),transparent 68%)}
+.hero::after{width:380px;height:380px;bottom:-60px;left:30%;background:radial-gradient(circle,var(--glow2),transparent 68%)}
+h1{text-shadow:0 0 42px var(--glow)}
+.btn.p{box-shadow:0 10px 28px -10px var(--glow);transition:box-shadow .25s}
+.btn.p:hover{box-shadow:0 0 0 4px var(--soft),0 14px 36px -8px var(--glow)}
+.sk,.proj,.stats li{transition:box-shadow .25s,border-color .25s}
+.sk:hover,.proj:hover,.stats li:hover{border-color:var(--accent);box-shadow:0 14px 40px -16px var(--glow)}
+.tag{box-shadow:0 0 16px var(--glow2)}
+.chips li{box-shadow:0 0 0 1px var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main"><span class="who">Lavanya R</span>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav>
+  <header class="hero">
+    <div>
+      <h1>Lavanya R</h1>
+      <p class="role">AI Developer</p>
+      <p class="lede">I build user-friendly websites and web apps, from clean HTML interfaces to Python-powered back ends with Flask and Streamlit. B.E. graduate in Artificial Intelligence &amp; Machine Learning, so my sites can also be smart.</p>
+      <div class="cta"><a class="btn p" href="#projects">View my work</a><a class="btn" href="mailto:lavanyalavanya7661@gmail.com">Get in touch</a></div>
+    </div>
+  </header>
+</div>
+
+<main>
+<section id="about"><div class="wrap two">
+  <div>
+    <h2>About me</h2>
+    <p>I am a results-driven AI/ML student who loves crafting intelligent solutions that make a real-world impact. I enjoy turning ideas into working, easy-to-use web experiences, and I care about clean code and continuous learning.</p>
+    <p>I am excited to contribute to innovative projects and learn from industry experts across the full cycle of building software.</p>
+  </div>
+  <ul class="stats">
+    <li><b>CGPA 8.50</b>B.E. AI &amp; Machine Learning, 2022 to 2026</li>
+    <li><b>Internship experience</b>Built and deployed apps with Flask and Streamlit</li>
+    <li><b>Research</b>Skin cancer detection paper (ISSN); forest fire paper published in Springer</li>
+  </ul>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="sk"><h3>Web development</h3><ul class="chips"><li>HTML</li><li>Flask</li><li>Streamlit</li><li>E-commerce UI</li><li>Model deployment</li></ul></div>
+    <div class="sk"><h3>Languages</h3><ul class="chips"><li>Python</li><li>Java</li><li>SQL</li><li>HTML</li><li>Excel</li></ul></div>
+    <div class="sk"><h3>AI &amp; data</h3><ul class="chips"><li>Machine Learning</li><li>Deep Learning</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li></ul></div>
+    <div class="sk"><h3>Soft skills</h3><ul class="chips"><li>Communication</li><li>Presentation</li><li>Problem solving</li><li>Leadership</li><li>Critical thinking</li><li>Time management</li><li>Adaptability</li></ul></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <article class="proj">
+    <h3>Flower Shop Website</h3>
+    <p class="when">June to July 2025</p>
+    <p>An e-commerce web application designed to sell fresh flowers and bouquets. Customers browse different flower categories, view product details and purchase through a user-friendly, attractive platform.</p>
+    <ul class="stack"><li>HTML</li><li>Web development</li><li>E-commerce</li><li>User-friendly design</li></ul>
+  </article>
+  <article class="proj">
+    <h3>A Smart AI-Based Dual Attention Deep Learning Framework for Forest Fire Detection</h3>
+    <span class="tag">Published in Springer</span>
+    <p class="when">December 2025</p>
+    <p>A smart AI system that uses a dual attention deep learning framework to accurately detect forest fires. It improves early detection by analyzing environmental data and images for rapid response.</p>
+    <ul class="stack"><li>Deep Learning</li><li>Attention</li><li>Computer Vision</li><li>Python</li></ul>
+  </article>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Internships &amp; workshops</h2>
+  <div class="entry"><div class="when">January 2025</div><div>
+    <h3>Machine Learning with Python Intern</h3><p class="org">Live Stream Technologies</p>
+    <ul><li>Developed and optimized ML models with Python and Scikit-learn to improve prediction accuracy.</li>
+    <li>Performed data cleaning, preprocessing and EDA with Pandas, NumPy, Matplotlib and Seaborn.</li>
+    <li>Built end-to-end ML pipelines covering training, evaluation and deployment as web apps with Flask and Streamlit.</li></ul></div></div>
+  <div class="entry"><div class="when">July 2024</div><div>
+    <h3>Artificial Intelligence in Action</h3><p class="org">Way to Me</p>
+    <ul><li>Real-world applications of AI using machine learning, NLP and computer vision.</li>
+    <li>How AI supports automation, decision-making and efficiency across industries.</li></ul></div></div>
+</div></section>
+
+<section id="credentials"><div class="wrap">
+  <h2>Education &amp; certificates</h2>
+  <div class="entry"><div class="when">Nov 2022 to May 2026</div><div><h3>B.E. Artificial Intelligence &amp; Machine Learning</h3><p class="org">Paavai College of Engineering, Namakkal, Tamil Nadu</p><p style="margin:0">CGPA 8.50</p></div></div>
+  <div class="entry"><div class="when">25 September 2025</div><div><h3>Cyber Security by Google</h3><p class="org">Naan Mudhalvan</p><p style="margin:0">Protecting systems, networks and data: threat detection, data privacy and online safety. Useful for building secure web apps.</p></div></div>
+  <div class="entry"><div class="when">2025</div><div><h3>Big Data &amp; Cloud Computing</h3><p class="org">NPTEL (IIT)</p><p style="margin:0">Certified in applying big data and cloud skills to real-world problems.</p></div></div>
+  <div class="entry"><div class="when">March 2025</div><div><h3>Efficient Skin Cancer Detection Using an Optimized CNN Framework</h3><p class="org">Published, ISSN</p><p style="margin:0">An optimized CNN framework that detects skin cancer from medical images for early diagnosis.</p></div></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Let's build something</h2>
+  <p>I am open to AI developer roles and internships. Email is the fastest way to reach me.</p>
+  <p><a class="big" href="mailto:lavanyalavanya7661@gmail.com">lavanyalavanya7661@gmail.com</a></p>
+  <p>Phone: <a href="tel:+919952496898">+91 99524 96898</a></p>
+  <p><a href="https://www.linkedin.com/in/lavanya-r631014301" rel="noopener">Connect on LinkedIn</a></p>
+</div></section>
+</main>
+<footer><div class="wrap">Lavanya R, AI Developer</div></footer>
+
+</body>
+</html>
